@@ -1,4 +1,3 @@
-
 pip install 
 langchain 
 langchain-core 
@@ -15,3 +14,49 @@ OpenAI
 Groq
 Gemini
 Ollama
+
+example 
+pdf chat bot 
+PDF/Text
+   ↓
+Loader
+   ↓
+Text Splitter
+   ↓
+Embeddings
+   ↓
+Vector Store
+   ↓
+Retriever
+   ↓
+LLM
+   ↓
+Answer
+
+
+
+big picture acrhitecture
+                ┌─────────────────┐
+                │     User        │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ Prompt Template │
+                └────────┬────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │      LLM        │
+                └────────┬────────┘
+                         │
+          ┌──────────────┴──────────────┐
+          ▼                             ▼
+   ┌─────────────┐              ┌─────────────┐
+   │  Retriever  │              │    Tools    │
+   └──────┬──────┘              └──────┬──────┘
+          │                             │
+          ▼                             ▼
+   ┌─────────────┐              ┌─────────────┐
+   │ Vector DB   │              │ APIs/Search │
+   └─────────────┘              └─────────────┘
