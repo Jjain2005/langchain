@@ -70,3 +70,15 @@ for environment loading
 import os 
 from dotenv import load_dotenv
 load_dotenv()
+
+
+
+Why LCEL Matters
+
+Benefits:
+
+composable
+async support
+streaming
+production-ready
+clean syntax
