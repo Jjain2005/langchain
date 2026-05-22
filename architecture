@@ -60,3 +60,13 @@ big picture acrhitecture
    ┌─────────────┐              ┌─────────────┐
    │ Vector DB   │              │ APIs/Search │
    └─────────────┘              └─────────────┘
+
+
+
+
+for environment loading 
+
+
+import os 
+from dotenv import load_dotenv
+load_dotenv()
