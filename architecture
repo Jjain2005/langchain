@@ -82,3 +82,24 @@ async support
 streaming
 production-ready
 clean syntax
+
+
+Common Loaders
+Loader	        Purpose
+PyPDFLoader 	  PDFs
+WebBaseLoader	  Websites
+CSVLoader	     CSV files
+TextLoader	     Text files
+
+
+
+
+
+
+
+
+
+
+
+
+
