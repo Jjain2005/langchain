@@ -91,7 +91,8 @@ WebBaseLoader	  Websites
 CSVLoader	     CSV files
 TextLoader	     Text files
 
-
+while training new models we can expect some model conflicts, because with older versions we got some extra library for example langchain.chain but 
+while using it now we can say that it can create some errors like with langchain.huggingface 
 
 
 
