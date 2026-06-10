@@ -132,6 +132,25 @@ prompt=ChatPromptTemplate.from_template(
 )
 
 
+# Embeddings
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+
+# Create Vector Store
+vectorstore = FAISS.from_documents(
+    final_documents,
+    embeddings
+)
+
+# Retriever
+retriever = vectorstore.as_retriever()
+
+# Output Parser
+output_parser = StrOutputParser()
+
+
+
 
 
 
