@@ -151,7 +151,24 @@ output_parser = StrOutputParser()
 
 
 
+ntinuing from your code:
 
+3. Improve the Retriever
+
+Currently:
+
+retriever = vectorstore.as_retriever()
+
+This uses default similarity search.
+
+A better version:
+
+retriever = vectorstore.as_retriever(
+    search_type="similarity",
+    search_kwargs={"k": 4}
+)
+
+k=4 means retrieve the top 4 relevant chunks.
 
 
 
