@@ -151,9 +151,8 @@ output_parser = StrOutputParser()
 
 
 
-ntinuing from your code:
 
-3. Improve the Retriever
+ Improve the Retriever
 
 Currently:
 
@@ -170,6 +169,16 @@ retriever = vectorstore.as_retriever(
 
 k=4 means retrieve the top 4 relevant chunks.
 
+prompt = ChatPromptTemplate.from_template(
+    """
+    Answer the question based only on the provided context.
 
+    <context>
+    {context}
+    </context>
+
+    Question: {input}
+    """
+)
 
 
